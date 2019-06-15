@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="styles.css"/>
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+			integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+			crossorigin=""/>
+		<script type="text/javascript" src="mapcode.js"></script>
+		<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+			integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+			crossorigin=""></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
+		<script src="https://www.mapquestapi.com/sdk/leaflet/v2.2/mq-map.js?key=prA3GgwIGgROGwBTmaM9uT5MEumq1RPL"></script>
+		<script src="https://www.mapquestapi.com/sdk/leaflet/v2.2/mq-geocoding.js?key=prA3GgwIGgROGwBTmaM9uT5MEumq1RPL"></script>
+	</head>
+	<body onload="initialiseGeocoder()"> 
+		<div id="mapid"></div>
+		<div id="info">
+			<div class="section">
+				<h3 class="srch">Search Town</h2>
+				<input id="usript" type="Text"/>
+				<input id="btn" type="button" onclick="getLocation()" value ="Go"/>
+				<h3 class="srch">Recent Search : </h3>
+				<div id="searchList">
+					<a id="recent1" class="recent"></a>
+					<a id="recent2" class="recent"></a>
+					<a id="recent3" class="recent"></a>
+				</div>
+			</div>
+			<div class="section">
+				<h4 class="srch">Sunrise Time : </h4>
+				<p id="sunRise"></p>
+				<h4 class="srch">Sunset Time : </h4>
+				<p id="sunSet"></p>
+				<h4 class="srch">Weather : </h4>
+				<p id="weather"></p>
+			</div>
+		</div>
+	</body>
+</html>

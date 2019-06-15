@@ -1,0 +1,56 @@
+#mapid { 
+	height: 580px; 
+}
+#usript {
+	margin-left:10%;
+	width:80%;
+	margin-bottom:20px;
+}
+#sunRise, #sunSet, #weather{
+	text-align:center;
+}
+.recent{
+	display:block;
+	text-align:center;
+}
+#info{
+	display:flex;
+	flex:center;
+}
+.container
+{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+    
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+}
+.section {
+
+	width:40%;
+	height:350px;
+	border: 5px solid red;
+	margin:5px;
+
+}
+#btn {
+	margin-left:30%;
+	width:40%
+
+}
+.srch {
+	 text-align: center;
+}
